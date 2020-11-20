@@ -1,11 +1,14 @@
 import React from 'react'
+import logo from '../Assets/Beer/Logo.png'
 
 export default function Navbar() {
     return (
         <nav>
             <div id="logo">
-                <h1>Mjlonir</h1>
+                <img src={logo} alt="" />
             </div>
+
+            <div className="rule"></div>
 
             <ul className="navigation">
                 <li><a href="#About" className="nav-item">About</a></li>
