@@ -74,11 +74,11 @@ main{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 60%;
+  height: 60vh;
 }
 
 section{
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
 }
 
@@ -225,7 +225,7 @@ section{
 }
 
 .text{
-  height: 40%;
+  height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -247,4 +247,58 @@ section{
     font-size: 2em;
     font-weight: bold;
     cursor: pointer;
+}
+
+.events{
+  background-image: url('./Assets/Images/people-partying.jpg');
+  height: 60vh;
+}
+
+.event-bg{
+  height: 60vh;
+}
+
+.event-links{
+  background-color: white;
+  width: 75%;
+  height: 175px;
+  position: absolute;
+  top: 60vh;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  box-shadow: 1px 1px 5px grey;
+  display: flex;
+}
+
+.event-links span{
+  display: flex;
+  border: 1px solid;
+  width: 25%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.upcoming-events{
+  margin-top: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  justify-content: space-around;
+}
+
+.event{
+  height: 50%;
+  width: 40%;
+  margin-bottom: 50px;
+}
+
+.event img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
