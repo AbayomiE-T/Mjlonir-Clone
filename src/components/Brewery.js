@@ -13,6 +13,13 @@ export default function Brewery() {
                     <p>THE MJLONIR EXPERIENCE</p>
                 </div>
             </div>
+
+            <div className="text">
+                <p>FORGED IN ICELAND, OUR BEER ENCAPSULATES THE POWER OF THE GODS. METICULOUSLY CRAFTED WITH ONLY THE FINEST INGREDIANTS AND STORED IN TRADITIONAL BARRELS TO ENHANCE OUR FLAVOUR,
+                WE HAVE PERFECTED THE WAY OF THE VIKING BEER.</p>
+                <p>COME EXPERIENCE IT YOURSELF!</p>
+                <button className="btn">BUY TICKETS</button>
+            </div>
         </section>
     )
 }
