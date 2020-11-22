@@ -29,7 +29,14 @@ export default function Navbar() {
     return (
         <nav>
             <div id="logo">
-                <Link className="nav-item" to="Home"><img src={logo} alt="" /></Link>
+                <Link className="nav-item" to="Home"
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                >
+                    <img src={logo} alt="" />
+                </Link>
             </div>
 
             <div className="rule"></div>
@@ -40,6 +47,7 @@ export default function Navbar() {
                         activeClass="active"
                         spy={true}
                         smooth={true}
+                        offset={-1}
                         duration={500}
                     >
                         About
@@ -50,6 +58,7 @@ export default function Navbar() {
                         activeClass="active"
                         spy={true}
                         smooth={true}
+                        offset={-1}
                         duration={500}
                     >
                         Brewery
@@ -60,6 +69,7 @@ export default function Navbar() {
                         activeClass="active"
                         spy={true}
                         smooth={true}
+                        offset={-1}
                         duration={500}
                     >
                         Events
