@@ -18,18 +18,18 @@ export default function About() {
             <div className="img-container about-icons">
                 <article>
                     <div className="icon-container"></div>
-                    <h2>QUALITY INGREDIENTS</h2>
-                    <p>We use pure, natural ingredients to create the balanced, rich taste and subtle fruity notes of Mjlonir</p>
+                    <h3>QUALITY INGREDIENTS</h3>
+                    <p>We use pure, natural ingredients to create the balanced, rich taste and subtle fruity notes of Mjlonir.</p>
                 </article>
                 <article>
                     <div className="icon-container"></div>
-                    <h2>BREWED IN ICELAND</h2>
-                    <p>Made with the same time-honoured tradition and always held to the highest standard, now served in its purest taste</p>
+                    <h3>BREWED IN ICELAND</h3>
+                    <p>Made with the same time-honoured tradition and always held to the highest standard, now served in its purest taste.</p>
                 </article>
                 <article>
                     <div className="icon-container"> </div>
-                    <h2>THE PERFECT PINT</h2>
-                    <p>Our traditional wood and iron kegs bring you clean, crisp beer from the brewery straight to your glass so you'll have a fresh pint every time</p>
+                    <h3>THE PERFECT PINT</h3>
+                    <p>Our traditional wood and iron kegs bring you clean, crisp beer from the brewery straight to your glass so you'll have a fresh pint every time.</p>
                 </article>
             </div>
         </section>

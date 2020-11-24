@@ -11,7 +11,7 @@ export default function Home() {
 
                 <div className="banner">
                     <div>
-                        <p>Cold as <br />Iceland</p>
+                        <p className="bg-text">Cold as <br />Iceland</p>
                     </div>
                     <div className="beer-can-container">
                         <img src={beer} alt="" />

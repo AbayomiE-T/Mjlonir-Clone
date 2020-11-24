@@ -108,6 +108,7 @@ section{
   height: 60%;
   width: 100%;
   display: flex;
+  justify-content: space-around;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -115,27 +116,31 @@ section{
 }
 
 .banner div{
+  height: 100%;
   width: 50%;
   color: white;
   position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.banner div p{
+ .banner div p{
   position: absolute;
   top: 50%;
-  left: 50%;
   transform: translate(-50%,-50%);
   text-transform: uppercase;
-  font-size: 5em;
-}
+  font-size: 5vw;
+} 
 
 .beer-can-container{
   overflow: hidden;
 }
 
 .beer-can-container img{
-  object-fit: cover;
+  object-fit: contain;
   position: absolute;
+  height: 100%;
+  width: 100%;
   bottom: -25%; 
   right: 50%;
   transform: translateX(50%);
@@ -182,8 +187,10 @@ section{
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 60%;
+  padding: 15px;
   transform: translate(-50%,-50%);
-  font-size: 5rem;
+  font-size: 4vw;
 }
 
 .line{
@@ -193,28 +200,29 @@ section{
 
 .line-1{
   width: 4px;
-  height: 50px;
+  height: 4.2vw;
   top: 0px;
   left: 0px;
 }
 
 .line-2{
   top: 0px;
-  width: 50px;
+  left: 0px;
+  width: 4.2vw;
   height: 4px;
 }
 
 .line-3{
   bottom: 0px;
   right: 0px;
-  height: 50px;
+  height: 4.2vw;
   width: 4px;
 }
 
 .line-4{
   bottom: 0px;
   right: 0px;
-  width: 50px;
+  width: 4.2vw;
   height: 4px;
 }
 
@@ -226,13 +234,13 @@ section{
 
 .about-icons article .icon-container{
   background-color: black;
-  height: 150px;
-  width: 150px;
+  height: 50%;
+  width: 30%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.about-icons article h2{
+.about-icons article h3{
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -278,7 +286,7 @@ section{
 .event-links{
   background-color: white;
   width: 75%;
-  height: 175px;
+  height: 5%;
   position: absolute;
   top: 60vh;
   left: 50%;
@@ -371,10 +379,32 @@ section{
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 985px){
+  article p{
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 720px){
+  .image-container{
+    height: 50%;
+  }
+  
+  .about-icons article h3{
+    font-size: 1em
+  }
+}
+
+@media only screen and (max-width: 450px){
+  .image-container{
+    height: 25%;
+  }
+}
  
 @media only screen and (max-width: 580px){
   body{
-    overflow-x: hidden;
+    overflow: hidden;
   }
 
   .navigation{
@@ -396,6 +426,26 @@ section{
   .burger{
     display: block;
     cursor: pointer;
+  }
+
+  .btn{
+    padding: 10px;
+  }
+
+  .text p{
+    font-size: 0.7em;
+  }
+
+  article h3{
+    font-size: 0.7em !important;
+  }
+
+  article p{
+    font-size: 0.55em;
+  }
+
+  .event-links span{
+    font-size: 0.6em;
   }
 } 
 

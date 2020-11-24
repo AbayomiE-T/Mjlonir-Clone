@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import logo from '../Assets/Beer/Logo.png'
-import { Link, animateScroll as scroll } from 'react-scroll'
+import { Link } from 'react-scroll'
 
 export default function Navbar() {
 
@@ -47,7 +47,7 @@ export default function Navbar() {
                         activeClass="active"
                         spy={true}
                         smooth={true}
-                        offset={-1}
+                        offset={2}
                         duration={500}
                     >
                         About
@@ -58,7 +58,7 @@ export default function Navbar() {
                         activeClass="active"
                         spy={true}
                         smooth={true}
-                        offset={-1}
+                        offset={2}
                         duration={500}
                     >
                         Brewery
@@ -69,7 +69,7 @@ export default function Navbar() {
                         activeClass="active"
                         spy={true}
                         smooth={true}
-                        offset={-1}
+                        offset={2}
                         duration={500}
                     >
                         Events
