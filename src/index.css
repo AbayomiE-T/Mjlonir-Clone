@@ -367,7 +367,6 @@ section{
     display: flex;
     width: 50%;
     justify-content: space-around;
-    height: 92vh;
   }
 
   .navigation li{
@@ -411,6 +410,7 @@ section{
     top: 8vh;
     right: 0px;
     z-index: 1;
+    height: 92vh;
     background-color: rgba(0,0,0,0.95);
     height: 92vh;
     flex-direction: column;
