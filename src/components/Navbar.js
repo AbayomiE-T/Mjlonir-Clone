@@ -75,6 +75,17 @@ export default function Navbar() {
                         Events
                     </Link>
                 </li>
+                <li>
+                    <Link className="nav-item" to="Contact"
+                        activeClass="active"
+                        spy={true}
+                        smooth={true}
+                        offset={2}
+                        duration={500}
+                    >
+                        Contact
+                    </Link>
+                </li>
             </ul>
 
             <div ref={burgerRef} className="burger" onClick={handleClick}>
