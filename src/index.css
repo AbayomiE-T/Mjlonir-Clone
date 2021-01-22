@@ -5,9 +5,7 @@
 
 body {
   margin: 0px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Nunito', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -95,7 +93,7 @@ main{
 }
 
 section{
-  min-height: 100vh;
+  /* min-height: 100vh; */
   position: relative;
 }
 
@@ -151,8 +149,6 @@ section{
   height: 40%;
   width: 100%;
   background-color: white;
-  position: absolute;
-  bottom: 0px;
   justify-content: space-around;
   align-items: center;
 }
@@ -179,7 +175,7 @@ section{
   text-transform: uppercase;
   background-color: rgba(0,0,0,0.4);
   width: 100%;
-  height: 60%;
+  height: 60vh;
   text-align: center;
 }
 
@@ -226,23 +222,38 @@ section{
   height: 4px;
 }
 
+.about-icons{
+  min-height: 40vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .about-icons article{
-  height: 70%;
   width: 30%;
   text-align: center;
 }
 
-.about-icons article .icon-container{
-  background-color: black;
-  height: 50%;
-  width: 30%;
+.icon-container{
+  width: 120px;
+  height: 120px;
   margin-left: auto;
   margin-right: auto;
 }
 
+.icon-container img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .about-icons article h3{
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 8px;
+}
+
+.about-icons article p{
+  margin: 8px auto 0px auto;
+  width: 80%;
 }
 
 .brewery{
@@ -250,7 +261,7 @@ section{
 }
 
 .text{
-  height: 40vh;
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -259,7 +270,8 @@ section{
 
 .text p{
   text-align: center;
-  font-weight: 500;
+  width: 75%;
+  font-weight: 600;
 }
 
 .btn{
@@ -307,25 +319,21 @@ section{
 
 .upcoming-events{
   margin-top: 120px;
-  display: flex;
-  flex-wrap: wrap;
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 25px;
-  justify-content: space-around;
-}
-
-.event{
-  min-height: 50%;
-  width: 40%;
-  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 45%);
+  grid-auto-rows: 600px;
+  gap:30px;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 32px;
+  
 }
 
 .event img{
   height: 100%;
   width: 100%;
   object-fit: cover;
+  object-position: top;
 }
 
 .contact{
@@ -423,6 +431,7 @@ input[type="text"]{
   }
 }
 
+ 
 @media only screen and (max-width: 960px){
   .App{
     display: block;
@@ -463,31 +472,12 @@ input[type="text"]{
   .contact-form{
     width: 80%;
   }
-}
 
-@media only screen and (max-width: 985px){
-  article p{
-    font-size: 0.8em;
+  .upcoming-events{
+    grid-template-columns: repeat(1, 406px);
   }
 }
 
-@media only screen and (max-width: 720px){
-  .image-container{
-    height: 50%;
-  }
-  
-  .about-icons article h3{
-    font-size: 1em;
-  }
-
-}
-
-@media only screen and (max-width: 450px){
-  .image-container{
-    height: 25%;
-  }
-}
- 
 @media only screen and (max-width: 580px){
   html, body{
     overflow-x: hidden;
@@ -519,18 +509,27 @@ input[type="text"]{
     padding: 10px;
   }
 
+  .text{
+    /* display: block; */
+    margin-top: 32px;
+    padding-bottom: 32px;
+    text-align: center;
+  }
+
   .text p{
-    font-size: 0.7em;
+    width: 80%;
+    margin: 0px;
+  }
+  
+  .text p:nth-of-type(2){
+    margin-top: 48px;
+    margin-bottom: 48px;
   }
 
-  article h3{
-    font-size: 0.7em !important;
+  .text button{
+    position: relative;
+    
   }
-
-  article p{
-    font-size: 0.55em;
-  }
-
   .event-links span{
     font-size: 0.6em;
   }
@@ -559,4 +558,52 @@ input[type="text"]{
 
 .toggle-burger .line3{
   transform: rotate(45deg) translate(-5px,-6px);
+}
+
+@media only screen and (max-width: 710px){
+  .about-icons{
+    flex-direction: column;
+  }
+
+  .about-icons article{
+    width: 75%;
+  }
+
+  .about-icons article:nth-of-type(1){
+    padding-top: 32px;
+  }
+
+  .about-icons article + article{
+    margin-top: 32px;
+  }
+
+  .about-icons article:nth-of-type(3){
+    padding-bottom: 32px;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .upcoming-events{
+      display: block;
+    }
+
+  .event{
+    width: 300px;
+    height: 500px;
+    margin: auto;
+    transform: scale(0.8,0.8);
+  }
+
+}
+
+@media only screen and (max-width: 350px){
+
+  .event{
+    width: 275px;
+    height: 500px;
+    margin: auto;
+    margin-bottom: 32px;
+    transform: scale(1,1);
+  }
+
 }
