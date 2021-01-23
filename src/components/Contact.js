@@ -3,8 +3,7 @@ import React from 'react'
 const Contact = () => {
     return (
         <section id="Contact">
-            <div className="bg-image contact"></div>
-            <div className="bg-darken" style={{ height: '100%' }}>
+            <div className="contact">
                 <form className="contact-form">
                     <div className="form-item">
                         <h1>LET'S TALK!</h1>
@@ -29,6 +28,7 @@ const Contact = () => {
                     </div>
                 </form>
             </div>
+            <div className="bg-darken" style={{ height: '100%' }}></div>
         </section>
     )
 }
