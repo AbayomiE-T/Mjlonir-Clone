@@ -20,7 +20,7 @@ const Contact = () => {
                     </div>
                     <div className="form-item">
                         <label htmlFor="">MESSAGE*</label>
-                        <textarea name="message" id="message" placeholder="Message">
+                        <textarea name="message" id="message">
                         </textarea>
                     </div>
                     <div className="form-item">
