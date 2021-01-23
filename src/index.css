@@ -14,6 +14,13 @@ body {
   display: flex;
 }
 
+button:hover{
+  background-color: black;
+  color: rgb(190, 162, 1);
+  transition: all 0.25s ease-out;
+  cursor: pointer;
+}
+
 nav {
   background-color: black;
   color: white;
@@ -39,6 +46,10 @@ nav {
 
 #logo img{
   height: inherit;
+}
+
+.navigation li:hover > a{
+  color:rgb(190, 162, 1);
 }
 
 .rule{
@@ -102,7 +113,7 @@ section{
 }
 
 .banner{
-  height: 60%;
+  height: 60vh;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -145,7 +156,7 @@ section{
 
 .img-container{
   display: flex;
-  height: 40%;
+  min-height: 40vh;
   width: 100%;
   background-color: white;
   justify-content: space-around;
@@ -154,7 +165,7 @@ section{
 
 .image-container{
   width: 45%;
-  height: 80%;
+  height: 300px;
 }
 
 .image-container img{
@@ -426,7 +437,7 @@ input[type="text"]{
   display: inline-block;
   width: 50%;
   background-color: white;
-  border: 3px solid;
+  border: 3px solid black;
   padding-top: 1.5vh;
   padding-bottom: 1.5vh;
   font-weight: 700;
@@ -493,6 +504,21 @@ input[type="text"]{
 
   .upcoming-events{
     grid-template-columns: repeat(1, 406px);
+  }
+}
+
+@media only screen and (max-width: 750px){
+  .img-container{
+    flex-direction: column;
+  }
+
+  .image-container{
+    margin: 32px 0px 0px 0px;
+    width: 300px;
+  }
+
+  .image-container:nth-of-type(2){
+    margin-bottom: 32px;
   }
 }
 
@@ -610,6 +636,11 @@ input[type="text"]{
     margin: auto;
     margin-bottom: 32px;
     transform: scale(1,1);
+  }
+
+  .image-container{
+    width: 250px;
+    height: 250px;
   }
 
 }

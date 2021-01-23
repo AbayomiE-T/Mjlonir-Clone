@@ -18,7 +18,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="img-container home-images">
+                <div className="img-container">
                     <div className="image-container">
                         <img src={rye} alt="" />
                     </div>
